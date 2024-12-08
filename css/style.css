@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    
+}
+header a{
+    max-width: 40%;
+    align-content: space-around;
+}
+header img{
+    max-width: 50%; 
+}
+.logoImg img {
+    max-width: 50%;
+    margin: 5% 10% 0% 0%;
+}
+form{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.pesquisar{
+    width: 100%;
+    border-radius: 60px;
+    border:1px solid #ccc;
+    margin: 2% 0;
+    display: flex;  
+    overflow: hidden; 
+        
+}
+input[type="search"]{
+    width: 100%;
+    border: none;
+    margin: 0 1%;
+    height: 100%;
+    
+}
+form button{
+    background: #f0f0f0;
+    border: none;
+    padding: 0 5%;
+    height: 100%;
+}
+.bt{
+    margin: 2% 1%;
+    
+}
+.bt button{
+    border-radius: 50%;
+    border: none;    
+    padding: 18px;
+    height: 90%;
+}
+.logoImg{
+    min-width: 25%;
+    max-width: min-content;
+}
+.menu-login{
+    text-align: end;
+    display: flex;
+    
+}
+.menu-up{
+    display: flex;
+    text-align-last: justify;
+    position: relative;
+    left: 100px;
+}
+.menu-up button{
+    background: white;
+    border-radius: 50%;
+    border: none;    
+    padding: 18px;
+    height: 90%;
+    
+}
+.menu-login img{
+    margin: 10% 0;
+}
+.menu-genero{
+    width: 98%;
+    display: flex;
+    margin: 1%;
+    gap: 10px; /* Espaçamento entre os botões */
+    overflow-x: auto; /* Ativa a rolagem horizontal */
+    white-space: nowrap;
+}
+.menu-genero button{
+    background: #f0f0f0;
+    border-radius: 20%;
+    border: none;    
+    padding: 7px;
+}
+
+.menu-conteudo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15PX;
+    margin: 1%;
+}
+.conteudo-1 .capa img{
+    width: 100%;
+    border-radius: 10px;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 35px;
+}
+.inf{
+    display: flex;
+    margin: 5%;
+    color: #868686;
+}
+.inf h1{
+    font-size: large;
+    color: black;
+}
+.infAutor{
+    display: flex;
+    margin-top: 2%;
+}
+.infAutor img{
+    width: 20px;
+    margin-left: 1%;
+}
+.avatar{
+    margin-right: 5%;
+}
+.infConteudo h1{
+    font-size: 120%;
+    margin: 1% 0;
+}
+.infDados{
+    display: flex;
+
+}
+.infConteudo p{
+    font-size: 100%;
+}
+.infDados span{
+    
+    margin: 1% 2%;
+    
+
+}
+@media (max-width:800Px) {
+    .menu-conteudo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15PX;
+        margin: 1%;
+    }
+    .menu-up{
+        display: flex;
+        text-align-last: justify;
+        position: relative;
+        left: 0px;
+    }
+    .infConteudo p{
+        font-size: 80%;
+    }
+}
